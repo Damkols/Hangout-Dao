@@ -7,7 +7,6 @@ import { timeline } from "motion";
 import { TimelineDefinition } from "@motionone/dom/types/timeline/types";
 import imagesLoaded from "imagesloaded";
 import HDImage2 from "../../assets/image 1.svg";
-import Founders from "../../data/Founders";
 
 /// Partners Import
 import partners1 from "../../assets/partners-assets/partners1.svg";
@@ -230,7 +229,7 @@ const Home: React.FunctionComponent = () => {
 
         <div className="sneakpeek" data-scroll data-scroll-speed="6">
           <div className="sneakpeek__video">
-            <video src={HDvid} width="700" height="500" autoPlay="true" />
+            <video src={HDvid} width="700" height="500" />
           </div>
           <div className="sneakpeek__text">
             <h1>
@@ -241,18 +240,6 @@ const Home: React.FunctionComponent = () => {
             </h1>
           </div>
         </div>
-
-        {/* <div className="founders">
-          <h1>Meet our Founders</h1>
-          <div className="founders__card">
-            {Founders.map((data) => (
-              <div className="" key={data.id}>
-                {/* <img src={data.img} alt="" />
-                <h3>{data.name}</h3>
-              </div>
-            ))}
-          </div>
-        </div>*/}
 
         <div className="footer">
           <h2>Join the discussion</h2>
