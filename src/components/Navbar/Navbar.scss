@@ -1,0 +1,55 @@
+@import "../../styles//variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0.5rem;
+  }
+
+  &__logo {
+    h1 {
+      font-family: $font-Lexend;
+      font-size: 3rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-left: 1rem;
+      font-family: $font-Lexend;
+
+      a {
+        font-size: 1.2rem;
+        color: $generated-Greyblack;
+
+        &:hover {
+          color: $generated-orange2;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 0.75rem;
+        }
+      }
+
+      .btn {
+        border: 1px solid $mint-green;
+        padding: 0.75rem 1.5rem;
+        background: $mint-green;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+          padding: 0.3rem 0.7rem;
+        }
+      }
+    }
+  }
+}
